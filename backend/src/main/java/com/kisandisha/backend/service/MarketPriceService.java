@@ -52,7 +52,7 @@ public class MarketPriceService {
                     continue;
                 }
 
-                String[] values = line.split(",", -1);
+                String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
 
                 if (values.length < 10) {
                     continue;
