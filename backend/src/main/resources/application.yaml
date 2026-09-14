@@ -3,11 +3,14 @@ spring:
     name: backend
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/kisandisha
-    username: postgres
-    password: hinash
+    url: jdbc:postgresql://$dpg-dajt0f15efls73a8ajl0-a:$5432/$kisandisha_db_avyk
+    username: $kisandisha_db_avyk_user
+    password: $za9FOxjdELQQLVyQ1fc8fyL2lUMs5gA6
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+server:
+  port: ${PORT:8080}
