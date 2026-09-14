@@ -13,7 +13,7 @@ app.innerHTML = `
       <a href="#features">Features</a>
       <a href="#about">About</a>
     </div>
-  fetch("https://kisandisha.onrender.com/api/markets")
+  
 
   <section class="hero" id="home">
     <div class="hero-content">
@@ -209,7 +209,7 @@ startButton?.addEventListener('click', () => {
 
     localStorage.setItem('kisandishaCrop', crop)
     const historyResponse = await fetch(
-  `http://localhost:8080/api/markets/history?commodity=${encodeURIComponent(crop)}&district=${encodeURIComponent(farmerLocation)}`
+  `https://kisandisha.onrender.com/api/markets/history?commodity=${encodeURIComponent(crop)}&district=${encodeURIComponent(farmerLocation)}`
 )
 
 const historyData = await historyResponse.json()
@@ -242,7 +242,7 @@ console.log("Price History:", historyData)
     try {
 
       const response =
-        await fetch('http://localhost:8080/api/markets')
+        await fetch('https://kisandisha.onrender.com/api/markets')
 
       if (!response.ok) {
         throw new Error('Failed to fetch market data')
