@@ -66,7 +66,6 @@ public class MarketPriceService {
                 marketPrice.setCommodity(values[3]);
                 marketPrice.setVariety(values[4]);
                 marketPrice.setGrade(values[5]);
-                marketPrice.setArrivalDate(values[6]);
 
                 marketPrice.setMinPrice(parsePrice(values[7]));
                 marketPrice.setMaxPrice(parsePrice(values[8]));

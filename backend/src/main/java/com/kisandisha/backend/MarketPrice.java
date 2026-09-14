@@ -20,7 +20,6 @@ public class MarketPrice {
     private String commodity;
     private String variety;
     private String grade;
-    private String arrivalDate;
     private Double minPrice;
     private Double maxPrice;
     private Double modalPrice;
@@ -82,14 +81,6 @@ public class MarketPrice {
 
     public void setGrade(String grade) {
         this.grade = grade;
-    }
-
-    public String getArrivalDate() {
-        return arrivalDate;
-    }
-
-    public void setArrivalDate(String arrivalDate) {
-        this.arrivalDate = arrivalDate;
     }
 
     public Double getMinPrice() {
