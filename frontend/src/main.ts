@@ -13,7 +13,7 @@ app.innerHTML = `
       <a href="#features">Features</a>
       <a href="#about">About</a>
     </div>
-  </nav>
+  fetch("https://kisandisha.onrender.com/api/markets")
 
   <section class="hero" id="home">
     <div class="hero-content">
